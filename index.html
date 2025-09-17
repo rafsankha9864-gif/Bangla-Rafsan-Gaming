@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bangla Rafsan Gaming</title>
   <!-- ফেভিকন -->
-  <link rel="icon" type="image/png" href="https://i.ibb.co/6RQwdn5/rafsan-train-logo.jpg">
+  <link rel="icon" type="image/png" href="https://i.ibb.co/cvrwKrh/train-simulator-bangladesh.jpg">
   <style>
     * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif;}
     body {background: #0f172a; color: #f8fafc;}
@@ -28,6 +28,7 @@
       border: 4px solid #38bdf8;
       box-shadow: 0 0 30px #38bdf8;
       margin-bottom: 20px;
+      object-fit: cover;
     }
     header h1 {
       font-size: 3rem;
@@ -80,27 +81,36 @@
     }
 
     /* Downloads */
-    .download a {
+    .download .card {
       display: inline-block;
-      margin: 15px;
-      padding: 14px 30px;
+      background: #1e293b;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #38bdf8;
+      margin: 20px;
+      overflow: hidden;
+      width: 320px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .download .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px #facc15;
+    }
+    .download img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .download a {
+      display: block;
+      padding: 14px;
       background: linear-gradient(90deg, #dc2626, #ef4444);
       color: white;
       font-weight: bold;
       text-decoration: none;
-      border-radius: 40px;
-      box-shadow: 0 0 20px #dc2626;
-      transition: transform 0.2s, box-shadow 0.2s;
     }
     .download a:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 30px #facc15;
-    }
-    .download img {
-      max-width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 0 25px #38bdf8;
-      margin-bottom: 20px;
+      background: linear-gradient(90deg, #facc15, #eab308);
+      color: black;
     }
 
     /* Contact */
@@ -134,7 +144,7 @@
   <!-- Hero Section -->
   <header>
     <!-- লোগো -->
-    <img src="https://i.ibb.co/6RQwdn5/rafsan-train-logo.jpg" alt="Bangla Rafsan Gaming Logo">
+    <img src="https://i.ibb.co/cvrwKrh/train-simulator-bangladesh.jpg" alt="Bangla Rafsan Gaming Logo">
     <h1>Bangla Rafsan Gaming</h1>
     <p>🎮 Train Simulator Bangladesh Official Website 🎮</p>
   </header>
@@ -159,14 +169,10 @@
     <!-- Downloads Section -->
     <section id="downloads" class="download">
       <h2>⬇️ Game Download Links</h2>
-
-      <!-- লোকো ডাউনলোড -->
-      <img src="https://i.ibb.co/M7wncps/6602-train.jpg" alt="Loco 6602">
-      <a href="https://drive.google.com/file/d/1Jz-ZlV-xE-DJt8hTOQWCIurw64Y599TA/view" target="_blank">🚆 লোকো ডাউনলোড (6602)</a>
-
-      <!-- পুরানো লিংকগুলো -->
-      <a href="https://www.mediafire.com/" target="_blank">🚂 Download Train Game 1</a>
-      <a href="https://drive.google.com/" target="_blank">🚋 Download Train Game 2</a>
+      <div class="card">
+        <img src="https://i.ibb.co/D9dQ2xx/train-loco-6602.jpg" alt="Loco 6602">
+        <a href="https://drive.google.com/file/d/1Jz-ZlV-xE-DJt8hTOQWCIurw64Y599TA/view" target="_blank">🚂 লোকো ডাউনলোড 6602</a>
+      </div>
     </section>
 
     <!-- Contact Section -->
