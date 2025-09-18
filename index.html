@@ -3,112 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bangla Rafsan Gaming</title>
-  <!-- ফেভিকন -->
-  <link rel="icon" type="image/png" href="main-logo.png">
+  <title>Bangladesh Train Simulator Mods</title>
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif;}
-    body {background: #0f172a; color: #f8fafc;}
-
-    /* Header */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
     header {
-      background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-                  url('header-bg.jpg') no-repeat center/cover;
-      height: 60vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    header img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 4px solid #38bdf8;
-      box-shadow: 0 0 30px #38bdf8;
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
-    header h1 {
-      font-size: 3rem;
-      color: #38bdf8;
-      text-shadow: 0 0 20px #38bdf8;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #facc15;
-      text-shadow: 0 0 10px black;
-    }
-
-    /* Navigation */
-    nav {
-      background: #111827;
+      background: #2c3e50;
+      color: white;
       padding: 15px;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {color: #facc15; text-shadow: 0 0 10px #facc15;}
-
-    /* Sections */
-    .container {padding: 50px 20px; max-width: 1100px; margin: auto;}
-    section {margin-bottom: 60px; text-align: center;}
-    section h2 {
-      margin-bottom: 20px;
-      font-size: 2.2rem;
-      color: #facc15;
-      text-shadow: 0 0 15px #facc15;
-    }
-
-    /* Video */
-    .video iframe {
-      border-radius: 15px;
-      box-shadow: 0 0 30px #38bdf8;
-      width: 100%;
-      max-width: 800px;
-      height: 450px;
-    }
-
-    /* Downloads */
-    .download .card {
-      display: inline-block;
-      background: #1e293b;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #38bdf8;
-      margin: 20px;
-      overflow: hidden;
-      width: 320px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .download .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px #facc15;
-    }
-    .download img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .download a {
-      display: block;
-      padding: 14px;
-      background: linear-gradient(90deg, #0ea5e9, #22c55e);
       color: white;
-      font-weight: bold;
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
-    .download a:hover {
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .download {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .card a {
+      display: block;
+      margin-top: 10px;
+      padding: 10px;
+      background: #2980b9;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .card a:hover {
+      background: #1abc9c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚂 Bangladesh Train Simulator Mods</h1>
+    <p>Download your favorite train mods & maps</p>
+  </header>
+
+  <nav>
+    <a href="#downloads">Downloads</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- Downloads Section -->
+  <section id="downloads" class="download">
+    <h2>⬇️ Game Download Links</h2>
+    
+    <!-- লোকো 6602 -->
+    <div class="card">
+      <img src="https://i.ibb.co/D9dQ2xx/train-loco-6602.jpg" alt="Loco 6602">
+      <a href="https://drive.google.com/file/d/1Jz-ZlV-xE-DJt8hTOQWCIurw64Y599TA/view" target="_blank">🚂 লোকো ডাউনলোড 6602</a>
+    </div>
+
+    <!-- ঢাকা টু রাজশাহী ম্যাপ -->
+    <div class="card">
+      <img src="https://i.ibb.co/Qd2Rh5y/rajshahi-map.jpg" alt="Dhaka to Rajshahi Map">
+      <a href="https://drive.google.com/drive/u/0/mobile/folders/1SXXWIBw14x-x1u6yuCuHBU348rfHN9Ne" target="_blank">🗺️ ঢাকা টু রাজশাহী ম্যাপ</a>
+    </div>
+
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>ℹ️ About This Website</h2>
+    <p>এখানে আপনি বাংলাদেশ ট্রেন সিমুলেটরের বিভিন্ন লোকো, কোচ এবং ম্যাপ সহজে ডাউনলোড করতে পারবেন।</p>
+  </section>
+
+</body>
+</html>      font-weight: bold;
+    }
+    .contact a:hover {
+      color: #facc15;
+      text-shadow: 0 0 10px #facc15;
+    }
+
+    /* Footer */
+    footer {
+      background: #111827;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+    footer a {color: #38bdf8; text-decoration: none;}
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <!-- মেইন লোগো -->
+    <img src="main-logo.png" alt="Bangla Rafsan Gaming Logo">
+    <h1>Bangla Rafsan Gaming</h1>
+    <p>🎮 Train Simulator Bangladesh Official Website 🎮</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#videos">Videos</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Videos Section -->
+    <section id="videos" class="video">
+      <h2>📺 Latest YouTube Video</h2>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="download">
+      <h2>⬇️ Game Download Links</h2>
+      
+      <!-- লোকো 6602 -->
+      <div class="card">
+        <img src="https://i.ibb.co/D9dQ2xx/train-loco-6602.jpg" alt="Loco 6602">
+        <a href="https://drive.google.com/file/d/1Jz-ZlV-xE-DJt8hTOQWCIurw64Y599TA/view" target="_blank">🚂 লোকো ডাউনলোড 6602</a>
+      </div>
+
+      <!-- ঢাকা টু রাজশাহী ম্যাপ -->
+      <div class="card">
+        <img src="https://i.ibb.co/Qd2Rh5y/rajshahi-map.jpg" alt="Dhaka to Rajshahi Map">
+        <a href="https://drive.google.com/drive/u/0/mobile/folders/1SXXWIBw14x-x1u6yuCuHBU348rfHN9Ne" target="_blank">🗺️ ঢাকা টু রাজশাহী ম্যাপ</a>
+      </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>📩 Contact & Socials</h2>
+      <p>Subscribe on <a href="https://www.youtube.com/@Bangla-Rafsan-Gaming" target="_blank">YouTube</a></p>
+      <p>Follow on <a href="https://www.facebook.com/rafsan3.429529" target="_blank">Facebook</a></p>
+      <p>Email: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Bangla Rafsan Gaming | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>    .download a:hover {
       background: linear-gradient(90deg, #facc15, #eab308);
       color: black;
     }
