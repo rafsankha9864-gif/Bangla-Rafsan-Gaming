@@ -5,142 +5,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bangla Rafsan Gaming</title>
   <!-- ফেভিকন -->
-  <link rel="icon" type="image/png" href="main-logo.png">
+  <link rel="icon" type="image/png" href="logo.png">
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif;}
-    body {background: #0f172a; color: #f8fafc;}
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+    body {background: #0f172a; color: #f1f5f9; line-height: 1.6;}
+    header {background: #1e293b; padding: 20px; text-align: center;}
+    header h1 {color: #38bdf8; font-size: 28px;}
+    nav {margin-top: 10px;}
+    nav a {color: #facc15; margin: 0 10px; text-decoration: none; font-weight: bold;}
+    nav a:hover {color: #38bdf8;}
 
-    /* Header */
-    header {
-      background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-                  url('header-bg.jpg') no-repeat center/cover;
-      height: 60vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    header img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      border: 4px solid #38bdf8;
-      box-shadow: 0 0 30px #38bdf8;
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
-    header h1 {
-      font-size: 3rem;
-      color: #38bdf8;
-      text-shadow: 0 0 20px #38bdf8;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #facc15;
-      text-shadow: 0 0 10px black;
-    }
+    .hero {text-align: center; padding: 40px 20px;}
+    .hero h2 {font-size: 24px; margin-bottom: 10px; color: #facc15;}
+    .hero p {font-size: 16px; color: #cbd5e1;}
 
-    /* Navigation */
-    nav {
-      background: #111827;
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
-    }
-    nav a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {color: #facc15; text-shadow: 0 0 10px #facc15;}
+    section {padding: 30px 20px;}
+    section h2 {font-size: 22px; margin-bottom: 20px; color: #38bdf8; text-align: center;}
 
-    /* Sections */
-    .container {padding: 50px 20px; max-width: 1100px; margin: auto;}
-    section {margin-bottom: 60px; text-align: center;}
-    section h2 {
-      margin-bottom: 20px;
-      font-size: 2.2rem;
-      color: #facc15;
-      text-shadow: 0 0 15px #facc15;
-    }
+    .download {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;}
+    .card {background: #1e293b; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); overflow: hidden; text-align: center; transition: 0.3s;}
+    .card:hover {transform: scale(1.03);}
+    .card img {width: 100%; height: 160px; object-fit: cover;}
+    .card a {display: block; padding: 12px; background: #38bdf8; color: #0f172a; font-weight: bold; text-decoration: none; margin: 10px; border-radius: 8px;}
+    .card a:hover {background: #facc15; color: #0f172a;}
+    .card p {padding: 10px; font-size: 14px;}
 
-    /* Video */
-    .video iframe {
-      border-radius: 15px;
-      box-shadow: 0 0 30px #38bdf8;
-      width: 100%;
-      max-width: 800px;
-      height: 450px;
-    }
-
-    /* Downloads */
-    .download .card {
-      display: inline-block;
-      background: #1e293b;
-      border-radius: 15px;
-      box-shadow: 0 0 20px #38bdf8;
-      margin: 20px;
-      overflow: hidden;
-      width: 320px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .download .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px #facc15;
-    }
-    .download img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .download a {
-      display: block;
-      padding: 14px;
-      background: linear-gradient(90deg, #0ea5e9, #22c55e);
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .download a:hover {
-      background: linear-gradient(90deg, #facc15, #eab308);
-      color: black;
-    }
-
-    /* Contact */
-    .contact p {
-      margin: 10px 0;
-      font-size: 1.1rem;
-    }
-    .contact a {
-      color: #38bdf8;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .contact a:hover {
-      color: #facc15;
-      text-shadow: 0 0 10px #facc15;
-    }
-
-    /* Footer */
-    footer {
-      background: #111827;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #94a3b8;
-    }
-    footer a {color: #38bdf8; text-decoration: none;}
+    footer {background: #1e293b; text-align: center; padding: 15px; margin-top: 20px; color: #94a3b8;}
   </style>
 </head>
 <body>
 
+  <header>
+    <h1>🚂 Bangla Rafsan Gaming</h1>
+    <nav>
+      <a href="#downloads">Downloads</a>
+      <a href="#shopping">Shopping</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Bangla Rafsan Gaming</h2>
+    <p>এখানে পাবেন বাংলাদেশের জন্য গেমের স্পেশাল মড, স্কিন ও রেলওয়ে ম্যাপ 🚆</p>
+  </section>
+
+  <!-- Downloads Section -->
+  <section id="downloads" class="download">
+    <h2>⬇️ Game Download Links</h2>
+
+    <div class="card">
+      <img src="https://i.ibb.co/D9dQ2xx/train-loco-6602.jpg" alt="Loco 6602">
+      <a href="https://drive.google.com/file/d/1Jz-ZlV-xE-DJt8hTOQWCIurw64Y599TA/view" target="_blank">🚂 লোকো ডাউনলোড 6602</a>
+    </div>
+
+    <!-- ✅ Dhaka to Rajshahi Map -->
+    <div class="card">
+      <img src="https://i.ibb.co/p3Fj6vC/train-map.jpg" alt="Dhaka to Rajshahi Map">
+      <a href="https://drive.google.com/drive/u/0/mobile/folders/1SXXWIBw14x-x1u6yuCuHBU348rfHN9Ne" target="_blank">🗺️ ঢাকা–রাজশাহী ম্যাপ</a>
+    </div>
+
+    <!-- ✅ Dhaka to Kishoreganj Map -->
+    <div class="card">
+      <img src="https://i.ibb.co/0qRpgYF/train-map-kishoreganj.jpg" alt="Dhaka to Kishoreganj Map">
+      <a href="https://drive.google.com/file/d/17fe5leza-3epLpms_HPPeWR1yzbYtYcL/view" target="_blank">🗺️ ঢাকা–কিশোরগঞ্জ ম্যাপ (Main)</a>
+      <a href="https://drive.google.com/file/d/15cmYiH0UfHL9aKCH2RWSSQ3i87G_54BI/view" target="_blank">📂 Original Map</a>
+      <p style="padding:10px; color:#facc15; font-weight:bold;">
+        🔑 Password: <span style="color:#38bdf8;">Valo Hoye jau Masudh</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/9bJYkm6/train-skin.jpg" alt="Train Skin">
+      <a href="https://drive.google.com/file/d/EXAMPLE_SKIN/view" target="_blank">🎨 ট্রেন স্কিন প্যাক</a>
+    </div>
+  </section>
+
+  <!-- Shopping Section -->
+  <section id="shopping">
+    <h2>🛒 Shopping</h2>
+    <div class="download">
+
+      <div class="card">
+        <img src="https://i.ibb.co/9bJYkm6/train-skin.jpg" alt="Train Skin Pack">
+        <p>🎨 ট্রেন স্কিন প্যাক</p>
+        <p style="color:#facc15; font-weight:bold;">Price: 150৳</p>
+        <a href="https://example.com/buy-train-skin" target="_blank">🛍️ এখনই কিনুন</a>
+      </div>
+
+      <div class="card">
+        <img src="https://i.ibb.co/D9dQ2xx/train-loco-6602.jpg" alt="Train Loco 6602">
+        <p>🚂 লোকো 6602</p>
+        <p style="color:#facc15; font-weight:bold;">Price: 200৳</p>
+        <a href="https://example.com/buy-loco-6602" target="_blank">🛍️ এখনই কিনুন</a>
+      </div>
+
+      <div class="card">
+        <img src="https://i.ibb.co/p3Fj6vC/train-map.jpg" alt="Bangladesh Map">
+        <p>🗺️ স্পেশাল বাংলাদেশ গেম ম্যাপ</p>
+        <p style="color:#facc15; font-weight:bold;">Price: 300৳</p>
+        <a href="https://example.com/buy-bd-map" target="_blank">🛍️ এখনই কিনুন</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>ℹ️ About</h2>
+    <p style="text-align:center; max-width:600px; margin:auto;">
+      এই ওয়েবসাইটে আপনি পাবেন ETS2, Train Simulator সহ নানা গেমের জন্য বাংলা কনটেন্ট।
+      নতুন ম্যাপ, স্কিন এবং মড ডাউনলোড করতে আমাদের সাথেই থাকুন।
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>📩 Contact</h2>
+    <p style="text-align:center;">যেকোনো প্রশ্নের জন্য ইমেইল করুন: <b style="color:#facc15;">banglagaming@gmail.com</b></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Bangla Rafsan Gaming | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
   <!-- Hero Section -->
   <header>
     <!-- মেইন লোগো -->
